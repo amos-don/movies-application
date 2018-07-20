@@ -8,11 +8,9 @@ sayHello('World');
  * require style imports
  */
 const $ = require('jquery');
-
+const {getMovies} = require('./api.js');
 
 function runMovie() {
-    const {getMovies} = require('./api.js');
-    const $ = require('jquery');
 
     getMovies().then((movies) => {
         $('#loading').hide();
@@ -33,25 +31,26 @@ function runMovie() {
 `),
             $('#editBtn').click(e => {
                 e.preventDefault();
-    //             let editTitle = $('#editTitle').val();
-    //             let editRating = $('#editRating').val();
-    //             let selectedID = $('#inputID').val();
-    //
-    //             let editMovie ={ title: editTitle, rating: editRating};
-    //             console.log(editMovie);
-    //             console.log(JSON.stringify(editMovie));
-    //
-    //             $.ajax({
-    //                 url:   `/api/movies/${selectedID}`,
-    //                 type: 'PUT',
-    //                 data: JSON.stringify(editMovie),
-    //                 contentType: 'json'
-    //             });
-    //             runMovie();
-    //         })
-    //     );
-    // }).catch((error) => {
-    //     alert('Oh no! Something went wrong.\nCheck the console for details.');
+                let editTitle = $('#editTitle').val();
+                let editRating = $('#editRating').val();
+                let selectedID = $('#inputID').val();
+
+                let editMovie ={ "title": editTitle, "rating": editRating};
+
+                const edit = {
+                    method: 'PUT',
+                    headers: {
+                        'Content-type': 'application/json',
+                    },
+                    body: JSON.stringify(editMovie),
+                };
+                fetch(`/api/movies/${selectedID}`,edit)
+                    .then(runMovie)
+                    .catch();
+            })
+        );
+    }).catch((error) => {
+        alert('Oh no! Something went wrong.\nCheck the console for details.');
     //     console.log(error);
 
 
@@ -72,10 +71,4 @@ $('#submit').click( e => {
     runMovie();
 
 });
-
-/*
-*
-*   <p><input type="text" name="title" value="${title}"></p>
-    <button class="editBtn">Edit</button><button>Delete</button></div><br>
-* */
 
