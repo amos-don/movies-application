@@ -1,18 +1,19 @@
 {
   "movies": [
     {
-      "id": "1"
+      "title": "",
+      "rating": "1",
+      "id": 1
     },
     {
+      "title": "Star Wars: A New Hope",
+      "rating": "5",
       "id": 2
     },
     {
-      "title": "Some Movie",
-      "rating": "3",
+      "title": "adsklasjkd",
+      "rating": "2",
       "id": 3
-    },
-    {
-      "id": 4
     }
   ]
 }
