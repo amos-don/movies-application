@@ -27,7 +27,11 @@ function runMovie() {
         <input id="inputID" type="number" min="1" max="${movies.length}" value="1">
         <br>Title<br><input type="text" id="editTitle" name="title">
         <br>Rating<br><input id="editRating" type="number" name="rating" min="1" max="5" value="1">
-        <br><button id="editBtn">Edit</button>
+        <br><button id="editBtn">Edit</button><br><br>
+`),
+            $('#deleteMovie').html(`Select Movie to Delete(By Number)<br>
+        <input id="deleteID" type="number" min="1" max="${movies.length}" value="1">
+        <br><button id="deleteBtn">Delete</button>
 `),
             $('#editBtn').click(e => {
                 e.preventDefault();
@@ -47,7 +51,28 @@ function runMovie() {
                 fetch(`/api/movies/${selectedID}`,edit)
                     .then(runMovie)
                     .catch();
-            })
+            }),
+
+        $('#deleteBtn').click(e => {
+            e.preventDefault();
+            // let editTitle = $('#editTitle').val();
+            // let editRating = $('#editRating').val();
+            let selectedID = $('#deleteID').val();
+            //
+            // let editMovie ={ "title": editTitle, "rating": editRating};
+
+            const edit = {
+                method: 'Delete',
+                headers: {
+                    'Content-type': 'application/json',
+                },
+                body: JSON.stringify(editMovie),
+            };
+            fetch(`/api/movies/${selectedID}`,edit)
+                .then(runMovie)
+                .catch();
+        })
+
         );
     }).catch((error) => {
         alert('Oh no! Something went wrong.\nCheck the console for details.');
