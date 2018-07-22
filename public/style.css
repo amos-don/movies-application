@@ -1,11 +1,25 @@
 html, body {
     height: 100%;
+    /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFj9f6xgEE_XyAROMJlxn1C94ltRwEneSaqPyzi-F2tGBTR8e-");*/
+    background-image: url('https://www.123freevectors.com/wp-content/original/14516-cool-orange-background-design.jpg');
+    color: white;
 }
 
 .container {
     position: relative;
-    top: 50%;
-    bottom: 50%;
+    top: 40px;
+    bottom: 40px;
     transform: translateY(-25%);
     text-align: center;
 }
+
+#loading {
+    color: black;
+    font-size: 25px;
+    border-top: 16px solid black;
+    border-right: 16px solid yellow;
+    border-bottom: 16px solid black;
+    border-left: 16px solid yellow;
+
+}
+

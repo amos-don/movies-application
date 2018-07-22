@@ -3,7 +3,6 @@
  */
 import sayHello from './hello';
 sayHello('World');
-
 /**
  * require style imports
  */
@@ -55,8 +54,6 @@ function runMovie() {
 
         $('#deleteBtn').click(e => {
             e.preventDefault();
-            // let editTitle = $('#editTitle').val();
-            // let editRating = $('#editRating').val();
             let selectedID = $('#deleteID').val();
             //
             // let editMovie ={ "title": editTitle, "rating": editRating};

@@ -14,6 +14,41 @@
       "title": "DeadPool",
       "rating": "5",
       "id": 4
+    },
+    {
+      "title": "Avengers Infinity War",
+      "rating": "1",
+      "id": 5
+    },
+    {
+      "title": "The Lion King",
+      "rating": "2",
+      "id": 6
+    },
+    {
+      "title": "The Fast and the Furious",
+      "rating": "2",
+      "id": 7
+    },
+    {
+      "title": "Furious 8",
+      "rating": "1",
+      "id": 8
+    },
+    {
+      "title": "Epic",
+      "rating": "3",
+      "id": 9
+    },
+    {
+      "title": "deletethisone",
+      "rating": "1",
+      "id": 12
+    },
+    {
+      "title": "Thor: Ragnarok",
+      "rating": "1",
+      "id": 13
     }
   ]
 }
