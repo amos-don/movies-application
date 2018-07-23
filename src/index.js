@@ -12,7 +12,7 @@ function runMovie() {
         loading();
         movies.forEach(({title, rating, id}) => {
             $('#movieList').append(`<div id = ${id}><p><strong>Title #${id}:</strong> ${title} </p><strong>Rating:</strong> ${rating}<br>`);
-            selectID += `<option value = ${id}> ${id} </option>`;
+            selectID += `<option value = ${id}> ${id}: ${title} </option>`;
         });
 
         $('#addMovie').html(`<form id="addMovie" method="post" action="/api/movies">Movie Title: <br><input type="text" id="movieTitle" name="title"><br>Movie Rating: <br><input id="rates" type="number" name="rating" min="1" max="5" value="1"></form><button id="submit">Submit</button>`);
