@@ -1,8 +1,8 @@
 {
   "movies": [
     {
-      "title": "Star Wars: A New Hope",
-      "rating": "5",
+      "title": "hiiii",
+      "rating": "2",
       "id": 2
     },
     {
@@ -34,11 +34,6 @@
       "title": "Furious 8",
       "rating": "1",
       "id": 8
-    },
-    {
-      "title": "Epic",
-      "rating": "3",
-      "id": 9
     },
     {
       "title": "deletethisone",
