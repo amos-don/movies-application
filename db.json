@@ -1,8 +1,8 @@
 {
   "movies": [
     {
-      "title": "Star Wars: A New Hope",
-      "rating": "5",
+      "title": "hiiii",
+      "rating": "2",
       "id": 2
     },
     {
@@ -36,19 +36,14 @@
       "id": 8
     },
     {
-      "title": "Epic",
-      "rating": "3",
-      "id": 9
-    },
-    {
       "title": "deletethisone",
       "rating": "1",
-      "id": 12
+      "id": 10
     },
     {
       "title": "Thor: Ragnarok",
       "rating": "1",
-      "id": 13
+      "id": 11
     }
   ]
 }

@@ -9,26 +9,28 @@
 
     <div class="container">
         <div id="loading">Refreshing Your Movies...</div>
-        <div id="movieList">
-            <h1>Hello There!</h1>
-            <p>To get started, edit <code>src/index.js</code>.</p>
-        </div>
-            <br>
-        <div>
-            <form id="addMovie" method="post" action="/api/movies">
-                Movie Title: <br>
-                <input type="text" id="movieTitle" name="title"><br>
-                Movie Rating: <br>
-                <input id="rates" type="number" name="rating" min="1" max="5" value="1">
-            </form>
-            <button id="submit">Submit</button>
-        </div>
-            <br>
-        <div id="editMovie">
-            <br>
-        </div>
-        <div id="deleteMovie"></div>
     </div>
+    <div>
+        <div id="movieList"></div>
+        <div>
+            <div id="addMovie"></div>
+            <br>
+            <div id="editMovie"></div>
+            <br>
+            <div id="deleteMovie"></div>
+        </div>
+    </div>
+
+        <!--<div>-->
+            <!--<form id="addMovie" method="post" action="/api/movies">-->
+                <!--Movie Title: <br>-->
+                <!--<input type="text" id="movieTitle" name="title"><br>-->
+                <!--Movie Rating: <br>-->
+                <!--<input id="rates" type="number" name="rating" min="1" max="5" value="1">-->
+            <!--</form>-->
+            <!--<button id="submit">Submit</button>-->
+        <!--</div>-->
+
     <script src="/main.js"></script>
 </body>
 </html>
